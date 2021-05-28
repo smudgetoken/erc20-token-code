@@ -1,0 +1,7 @@
+const smudgetoken = artifacts.require("smudgetoken");
+const owner  = "0x895FF199fa22BA41a6f5f4E43c7cbaFA3d611057" ; // TODO: Replace me
+
+module.exports = async function(deployer) {
+  // Deploy Token
+  await deployer.deploy(smudgetoken);
+  const smudgetoken = await smudgetoken.deployed()
